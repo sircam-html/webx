@@ -1,1 +1,1 @@
-Personal profile [website](https://sircam-html.github.io/ch/)
+Personal Profile [Website](https://sircam-html.github.io/ch/)
