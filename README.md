@@ -1,4 +1,4 @@
 Personal [website](https://webx-dev.netlify.app/),
-for case study same website available on [uCoz](https://cristianhidalgo.do.am/) and [Orbiter](https://webx.orbiter.website/)
+for case study a replica of the website can be found in [uCoz](https://cristianhidalgo.do.am/) and [Orbiter](https://webx.orbiter.website/)
 
 
