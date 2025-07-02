@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>404 - Page Not Found</title>
+<style>
+  /* Base colors inspired by the referenced website */
+  :root {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --accent-color: #00ffff;
+    --button-bg: #00ffff;
+    --button-hover-bg: #00cccc;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 8rem;
+    margin: 0;
+    color: var(--accent-color);
+    text-shadow: 0 0 10px var(--accent-color);
+  }
+
+  h2 {
+    font-weight: normal;
+    font-size: 2rem;
+    margin: 0.5rem 0 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 400px;
+    line-height: 1.5;
+  }
+
+  a.button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    color: var(--bg-color);
+    background-color: var(--button-bg);
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px var(--button-bg);
+  }
+
+  a.button:hover {
+    background-color: var(--button-hover-bg);
+    box-shadow: 0 0 15px var(--button-hover-bg);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <h1>404</h1>
+  <h2>Oops! Page Not Found</h2>
+  <p>The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+  <a href="/" class="button" aria-label="Go back to homepage">Go to Homepage</a>
+</body>
+</html>
