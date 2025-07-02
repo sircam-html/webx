@@ -1,80 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>404 - Page Not Found</title>
-<style>
-  /* Base colors inspired by the referenced website */
-  :root {
-    --bg-color: #121212;
-    --text-color: #ffffff;
-    --accent-color: #00ffff;
-    --button-bg: #00ffff;
-    --button-hover-bg: #00cccc;
-  }
-
-  body {
-    margin: 0;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 8rem;
-    margin: 0;
-    color: var(--accent-color);
-    text-shadow: 0 0 10px var(--accent-color);
-  }
-
-  h2 {
-    font-weight: normal;
-    font-size: 2rem;
-    margin: 0.5rem 0 2rem;
-  }
-
-  p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    max-width: 400px;
-    line-height: 1.5;
-  }
-
-  a.button {
-    display: inline-block;
-    padding: 0.75rem 2rem;
-    font-size: 1.1rem;
-    color: var(--bg-color);
-    background-color: var(--button-bg);
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 0 10px var(--button-bg);
-  }
-
-  a.button:hover {
-    background-color: var(--button-hover-bg);
-    box-shadow: 0 0 15px var(--button-hover-bg);
-  }
-
-  /* Responsive adjustments */
-  @media (max-width: 600px) {
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>404 - Page Not Found</title>
+  <style>
+    :root {
+      --bg-color: #0a1026;
+      --text-color: #ffffff;
+      --bright-blue1: #00cfff;
+      --bright-blue2: #005dff;
+      --bright-blue3: #1e90ff;
+      --button-text-color: #ffffff;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(10, 16, 38, 0.7), rgba(0, 26, 51, 0.7)),
+        url('constructive_bg_01.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--text-color);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
     h1 {
-      font-size: 5rem;
+      font-size: 8rem;
+      margin: 0;
+      background: linear-gradient(90deg, var(--bright-blue1), var(--bright-blue2), var(--bright-blue3));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 40px var(--bright-blue1), 0 0 80px var(--bright-blue2);
     }
     h2 {
-      font-size: 1.5rem;
+      font-weight: normal;
+      font-size: 2rem;
+      margin: 0.5rem 0 2rem;
+      color: var(--bright-blue1);
+      text-shadow: 0 0 10px var(--bright-blue2);
     }
-  }
-</style>
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      max-width: 400px;
+      line-height: 1.5;
+      color: #b3e6ff;
+    }
+    a.button {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      font-size: 1.1rem;
+      color: var(--button-text-color);
+      background: linear-gradient(90deg, var(--bright-blue1), var(--bright-blue3));
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 0 20px var(--bright-blue2), 0 0 40px var(--bright-blue1);
+      transition: background 0.3s, box-shadow 0.3s;
+      border: none;
+    }
+    a.button:hover {
+      background: linear-gradient(90deg, var(--bright-blue3), var(--bright-blue1));
+      box-shadow: 0 0 40px var(--bright-blue3), 0 0 80px var(--bright-blue2);
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 5rem; }
+      h2 { font-size: 1.5rem; }
+    }
+  </style>
 </head>
 <body>
   <h1>404</h1>
